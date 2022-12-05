@@ -13,16 +13,18 @@ public class Main {
         employee[8] = new Employee("Мартынов", "Дмитрий", "Максимович", 5, 69866);
         employee[9] = new Employee("Афанасьева", "Мария", "Данииловна", 5, 62481);
 
+
         EmployeeService.printStaff(employee);
         EmployeeService.printExpensesStaff(employee);
         EmployeeService.printNamesStaff(employee);
-        EmployeeService.printMinStuffSalary(employee);
         EmployeeService.printMaxStuffSalary(employee);
+        EmployeeService.printMinStuffSalary(employee);
         EmployeeService.printMiddleStuffSalary(employee);
-        EmployeeService.printLowerThan(employee, EmployeeService.middleStuffSalary(employee));
-        EmployeeService.printHigherThan(employee, EmployeeService.middleStuffSalary(employee));
         EmployeeService.indexing(employee, 20);
+        EmployeeService.printStaff(employee);
+
         EmployeeService.printHigherThan(employee, EmployeeService.middleStuffSalary(employee));
+        EmployeeService.printLowerThan(employee, EmployeeService.middleStuffSalary(employee));
 
         DepartmentService.printDepartmentStaff(employee, 1);
         DepartmentService.printExpensesDepartment(employee, 1);
@@ -31,8 +33,7 @@ public class Main {
         DepartmentService.printMiddleDepartmentSalary(employee, 1);
         DepartmentService.indexDepartment(employee, 1, 20);
         DepartmentService.printDepartmentStaff(employee, 1);
-
-            }
+    }
 
 
 
